@@ -1,0 +1,138 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #111;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+header {
+  background-color: #222;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, .5);
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav {
+  background-color: #333;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, .5);
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav li {
+  margin: 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+nav a:hover {
+  color: #00B4B4;
+}
+
+#cerrar-sesion-btn {
+  background: rgba(20, 20, 20, .6);
+  border: 1px solid rgba(10, 180, 180, 1);
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.4s, padding 0.4s;
+}
+
+#cerrar-sesion-btn:hover {
+  background: rgba(20, 20, 20, .8);
+  padding: 10px 20px;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+section h2 {
+  font-size: 24px;
+  font-weight: 300;
+  border-bottom: 1px solid rgba(10, 180, 180, 1);
+  padding-bottom: 10px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid rgba(10, 180, 180, 1);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background: rgba(20, 20, 20, .2);
+  color: white;
+  outline: none;
+}
+
+button[type="submit"] {
+  background: rgba(20, 20, 20, .6);
+  border: 1px solid rgba(10, 180, 180, 1);
+  font-size: 18px;
+  color: white;
+  padding: 10px 50px;
+  cursor: pointer;
+  transition: background 0.4s, padding 0.4s;
+}
+
+button[type="submit"]:hover {
+  background: rgba(20, 20, 20, .8);
+  padding: 10px 80px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+table th,
+table td {
+  padding: 10px;
+  border: 1px solid rgba(10, 180, 180, 1);
+}
+
+table th {
+  background: rgba(20, 20, 20, .8);
+}
+
+table td {
+  background: rgba(20, 20, 20, .4);
+}

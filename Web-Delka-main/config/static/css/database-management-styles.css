@@ -1,0 +1,113 @@
+/* database-management-styles.css */
+
+/* Restablecer estilos */
+body, ul, li, h1, h2, h3, p, form, label, button, table, thead, tbody, th, tr, td {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: #111;
+  color: white;
+}
+
+header {
+  background: #333;
+  padding: 20px;
+}
+
+header h1 {
+  margin: 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+select {
+  padding: 10px;
+  margin-bottom: 15px;
+  width: 250px;
+  border: 1px solid rgba(10, 180, 180, 1);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background: rgba(20, 20, 20, .2);
+  color: white;
+  outline: none;
+}
+
+button[type="submit"] {
+  border: 1px solid rgba(10, 180, 180, 1);
+  background: rgba(20, 20, 20, .6);
+  font-size: 18px;
+  color: white;
+  padding: 10px 50px;
+  cursor: pointer;
+  transition: .4s;
+}
+
+button[type="submit"]:hover {
+  background: rgba(20, 20, 20, .8);
+  padding: 10px 80px;
+}
+
+/* Estilos de tabla */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+thead {
+  background-color: #333;
+  color: white;
+}
+
+th, td {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+th {
+  text-align: left;
+}

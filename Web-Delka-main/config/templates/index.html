@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>innovate Shop!</title>
+    <link rel="stylesheet" href="static/css/styles.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="signupSection">
+        <div class="info">
+            <h2>Innovate Shop</h2>
+            <p>The Future Is Here</p>
+        </div>
+        <form action="#" method="POST" class="signupForm" name="signupform">
+            <h2>Sign Up</h2>
+            <ul class="noBullet">
+                <li>
+                    <label for="username"></label>
+                    <input type="text" class="inputFields" id="username" name="username" placeholder="username" value="" oninput="return userNameValidation(this.value)" required/>
+                </li>
+                <li>
+                    <label for="password"></label>
+                    <input type="password" class="inputFields" id="password" name="password" placeholder="password" value="" oninput="return passwordValidation(this.value)" required/>
+                </li>
+                <li>
+                    <label for="role"></label>
+                    <select class="inputFields" id="role" name="role" required>
+                        <option value="" disabled selected>Select Role</option>
+                        <option value="admin">Administrador</option>
+                        <option value="user">Empresa</option>
+                    </select>
+                </li>
+                <li id="center-btn">
+                    <input type="submit" id="join-btn" name="join" alt="Join" value="Join">
+                </li>
+            </ul>
+        </form>
+    </div>
+    <div id="error-message" style="color: red; display: none;"></div>
+    <script src="static/js/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</body>
+
+</html>

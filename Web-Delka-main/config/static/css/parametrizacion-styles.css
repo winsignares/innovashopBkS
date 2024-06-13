@@ -1,0 +1,106 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #111;
+  background-repeat: no-repeat;
+}
+
+header {
+  background: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav {
+  background: #222;
+  padding: 10px 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+}
+
+nav ul li a:hover {
+  background: #555;
+}
+
+main {
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+.parametrizacionSection {
+  background: rgba(20, 40, 40, .8);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.parametro {
+  margin-bottom: 15px;
+}
+
+label {
+  display: inline-block;
+  width: 200px;
+  text-align: right;
+  margin-right: 20px;
+  font-size: 16px;
+  color: white;
+}
+
+input[type="number"] {
+  width: 100px;
+  padding: 10px;
+  border: 1px solid rgba(10, 180, 180, 1);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background: rgba(20, 20, 20, .2);
+  color: white;
+  outline: none;
+}
+
+#guardarParametrosBtn {
+  border: none;
+  background: rgba(20, 20, 20, .6);
+  font-size: 16px;
+  color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: .4s;
+}
+
+
+#guardarParametrosBtn::before {
+  content: "\1F4BE"; /* Código Unicode para el ícono de disco */
+  font-family: 'Open Sans', sans-serif;
+  margin-right: 5px; /* Ajusta el espacio entre el ícono y el texto */
+}

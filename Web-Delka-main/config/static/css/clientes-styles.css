@@ -1,0 +1,180 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+
+* {
+  font-family: 'Open Sans', sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #111;
+  background-repeat: no-repeat;
+  color: white;
+}
+
+header {
+  background: #333;
+  padding: 10px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+header nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+header nav ul li {
+  margin: 0 10px;
+}
+
+header nav ul li a,
+header nav ul li button {
+  color: white;
+  text-decoration: none;
+  background: none;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+header nav ul li button {
+  padding: 5px 10px;
+}
+
+header nav ul li a:hover,
+header nav ul li button:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 20px;
+}
+
+.clientes-section {
+  background: url(https://source.unsplash.com/TV2gg2kZD1o/1600x800);
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 800px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  box-shadow: 3px 10px 20px 5px rgba(0, 0, 0, .5);
+  padding: 20px;
+}
+
+.clientes-section h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.form-group {
+  margin: 15px 0;
+  width: 100%;
+  max-width: 400px;
+  text-align: left;
+}
+
+.form-group label {
+  font-size: 16px;
+}
+
+.form-group input {
+  margin-top: 5px;
+  font-size: 16px;
+  padding: 10px;
+  width: 100%;
+  border: 1px solid rgba(10, 180, 180, 1);
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background: rgba(20, 20, 20, .2);
+  color: white;
+  outline: none;
+}
+
+#cliente-form button {
+  border: 1px solid rgba(10, 180, 180, 1);
+  background: rgba(20, 20, 20, .6);
+  font-size: 18px;
+  color: white;
+  margin-top: 20px;
+  padding: 10px 50px;
+  cursor: pointer;
+  transition: .4s;
+}
+
+#cliente-form button:hover {
+  background: rgba(20, 20, 20, .8);
+  padding: 10px 80px;
+}
+
+/* Estilos para la tabla de clientes */
+#clientes-table {
+  width: 100%;
+  max-width: 800px;
+  margin-top: 20px;
+  border-collapse: collapse;
+  background: rgba(20, 20, 20, .8);
+  color: white;
+  box-shadow: 3px 10px 20px 5px rgba(0, 0, 0, .5);
+}
+
+#clientes-table th,
+#clientes-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+#clientes-table th {
+  background-color: transparent;
+  color: white;
+}
+
+#clientes-table tr:nth-child(even) {
+  background-color: rgba(20, 20, 20, .6);
+}
+
+#clientes-table tr:hover {
+  background-color: rgba(20, 20, 20, .4);
+}
+
+.clientes-section table {
+  width: 100%;
+}
+
+.clientes-section th, 
+.clientes-section td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.clientes-section th {
+  background-color: #333;
+  color: white;
+}
+
+.clientes-section tr:nth-child(even) {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.clientes-section tr:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestionar Bases de Datos</title>
+  <link rel="stylesheet" href="static/css/database-management-styles.css">
+</head>
+<body>
+  <header>
+    <h1>Gestionar Bases de Datos</h1>
+    <nav>
+      <ul>
+        <li><a href="/menu_principal">Menú principal</a></li>
+        <li><a href="/admin-empresa">Crear Empresa</a></li>
+        <li><a href="/gestion_empresas">Gestión de Empresas</a></li>
+        <li><a href="/periodo-managment">Gestión de Periodos</a></li>
+        <li><a href="/databasemanagment">Gestión de Bases de Datos</a></li>
+        <li><a href="/modulos">Gestión de módulos</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Empresas</h2>
+      <table id="empresa-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nombre de la Empresa</th>
+            <th>Descripción de la Empresa</th>
+            <th>Periodo Activo</th>
+            <th>Usuario</th>
+            <th>Contraseña</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- Las filas de la tabla se insertarán aquí dinámicamente -->
+        </tbody>
+      </table>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Gestionar Bases de Datos</p>
+  </footer>
+  
+  <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+  <script src="static/js/database-management-scripts.js"></script>
+</body>
+</html>
